@@ -7,6 +7,19 @@
 
     tools:context="curso.marce.mycalculator.MainActivity">
 
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:background="@android:color/black"
+            app:titleTextColor="@android:color/white"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
@@ -28,7 +41,7 @@
                 <EditText
                     android:id="@+id/etInput"
                     android:layout_width="match_parent"
-                    android:layout_height="@dimen/calc.input.height"
+                    android:layout_height="76dp"
                     android:layout_gravity="end|center_vertical"
                     android:drawableEnd="@drawable/baseline_backspace_36"
                     android:drawablePadding="16dp"
